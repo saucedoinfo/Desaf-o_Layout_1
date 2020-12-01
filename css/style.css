@@ -63,7 +63,6 @@ main {
 	background-color: #e2e2e2;
 }
 .main__article {
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 79%;
