@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: greenyellow;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+    background-color: cornflowerblue;
+    display: inline-block;
+    height: 20vh;
+    width: 100vw;
+}
+
+main {
+    display: inline-block;
+    background-color: darkkhaki;
+    height: 70vh;
+    width: 100vh;
+
+}
+
+.main__aside {
+    display: inline-block;
+    width: 30vw;
+    height: 100%;
+    background-color: red;
+}
+
+.main__article{
+    display: inline-block;
+    width: 70vw;
+    height: 100%;
+    background-color: black;
+
+}
+
+
+
+footer {
+    background-color: cornflowerblue;
+    display: inline-block;
+    height: 10vh;
+    width: 100vw;
+}
