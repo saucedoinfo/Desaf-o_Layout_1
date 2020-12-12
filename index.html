@@ -15,30 +15,25 @@
 		/>
 		<title>Desafío Layout 1</title>
 	</head>
-	<body>
+	<body class="container">
 		<header>
 			<div class="header__logo">
 				<img src="./img/logo_goku.png" alt="logo_goku" class="img-logo" />
 			</div>
 			<nav class="header__nav">
 				<ul>
-					<li>Home</li>
-					<li>Buscar</li>
+					<li class="header__nav__home">Home</li>
 					<li>Contacto</li>
+					<li>Buscar</li>
 				</ul>
 			</nav>
 		</header>
-		<main>
-			<aside class="main__aside">
-				<div class="card_01"></div>
-				<div class="card_02"></div>
-				<div class="card_03"></div>
-				<div class="card_04"></div>
-			</aside>
-			<article class="main__article">
-				<h1>Son Goku</h1>
+			<main class="main__article">
+				<h1 class="main__title">Son Goku</h1>
+				<picture class="main__picture"
+					><img src="./img/goku.png" alt="goku"
+				/></picture>
 				<section>
-					
 					<p>
 						Son Goku (孫そん悟ご空くうKan, Son GokūHepJP, Sūn Wùkōng),
 						originalmente llamado Zero en Estados Unidos e Hispanoamérica
@@ -66,10 +61,14 @@
 						destrucción en innumerables ocasiones, a pesar de no considerarse a
 						sí mismo como un héroe o salvador.
 					</p>
-					<img src="./img/goku.png" alt="goku" />
 				</section>
-			</article>
-		</main>
+				<aside class="main__cards">
+					<div class="card_01"></div>
+					<div class="card_02"></div>
+					<div class="card_03"></div>
+					<div class="card_04"></div>
+				</aside>
+			</main>
 		<footer>
 			<section class="footer__social-media">
 				<ul>
