@@ -16,13 +16,13 @@ img {
 	width: 100%;
 	height: 100vh;
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	justify-content: flex-start;
 }
 /* *************************************** HEADER ********************************************** */
 
 header {
-	background-color: #000;
+	background-color: rgb(15, 15, 15);
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -32,15 +32,16 @@ header {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .img-logo {
 	width: 10rem;
-	height: auto;
+	height: 12.4rem;
 }
 .header__nav {
 	width: 100%;
-	color: ivory;
+	color: orange;
 	font-size: 2rem;
 	list-style: none;
 	display: flex;
@@ -146,7 +147,7 @@ ul {
 footer {
 	display: flex;
 	align-content: center;
-	background-color: black;
+	background-color:  rgb(15, 15, 15);
 	width: 100%;
 	height: auto;
 	flex-wrap: wrap;
@@ -161,6 +162,7 @@ footer {
 	font-family: "Open Sans", sans-serif;
 	padding: 1rem;
 	order: 2;
+	color: #ff6600;
 }
 
 .footer__social-media > ul {
@@ -176,27 +178,22 @@ footer {
 }
 .footer__contact {
 	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	color: 	#e2e2e2;
 	text-align: center;
 	width: 100%;
 	padding: 1rem;
-	/* padding-top: 1rem; */
 	order: 1;
 }
 
 /* ************************************************************************* */
 
-@media (min-width: 600px) {
-
+@media (min-width: 992px) {
 	.container {
 		display: flex;
-		align-content: flex-start;
-		background-color: black;
 	}
 
 	header {
-		height: 124.203px;
-		/* height: 12.5%; */
-
 	}
 	.header__logo {
 		width: 20%;
@@ -209,16 +206,14 @@ footer {
 	}
 
 	.main__article {
-		/* height: 82.5%; */
 		display: flex;
 		flex-wrap: wrap;
-		flex-direction: row;
 		align-content: flex-start;
 	}
 
 	.main__title {
 		width: 100%;
-		/* height: 108px; */
+		align-self: flex-start;
 	}
 
 	.main__picture {
@@ -228,7 +223,6 @@ footer {
 
 	.main_information {
 		width: 65%;
-		border: red solid 2px;
 		margin: 0;
 		display: flex;
 		justify-content: center;
@@ -242,7 +236,8 @@ footer {
 	}
 
 	footer {
-		/* height: 5%; */
+		order: 4;
+		align-items: flex-start;
 	}
 	.footer__social-media {
 		width: 20%;
@@ -250,8 +245,17 @@ footer {
 	}
 
 	.footer__contact {
-		width: 80%;
+		width: 65%;
 		padding-top: 1rem;
 		order: 2;
 	}
+
+	.footer__social-media > ul > li > i::before {
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+
+	.header__nav > ul {
+		padding-right: 5rem;
+			}
 }
